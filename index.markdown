@@ -7,13 +7,15 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "color = input(&quot;What color are you going to wear on Monday? &quot;).lower()\n" +
-    "if color == &quot;black:\n" +
-    "	print(&quot;You are a sophomore or a senior.&quot;)\n" +
-    "elif color == &quot;white&quot;:\n" +
-    "	print(&quot;You are a freshman or a junior.&quot;)\n" +
+  var initial = "color = input(&quot;What color are you wearing today?&quot;).lower()\n" +
+    "if (color == &quot;red&quot;):\n" +
+    "	print(&quot;You are a freshman.&quot;)\n" +
+    "elif (color == &quot;purple&quot;):\n" +
+    "	print(&quot;You are a sophomore.&quot;)\n" +
+    "elif (color == &quot;orange&quot;):\n" +
+    "	print(&quot;You are a junior.&quot;)\n" +
     "else:\n" +
-    "	print(&quot;Who are you?&quot;)";
+    "	print(&quot;You are a senior.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
